@@ -42,9 +42,15 @@
 
 #### Optional execution of Functions
 
+
+
 - getData?.()
 
 ### Date (issue) in Appwrite
 
 Appwrite stores the date in UTC(Coordinated Universal Time) which is different from IST & GMT.
 To calculate the correct IST we should add 5:30 to UTC as IST is equals to GMT +5:30
+
+
+### LIVE
+https://pro-management-katikey-pandeys-projects.vercel.app/
