@@ -7,8 +7,7 @@ import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 import { PageError } from "@/components/page-error";
 import { PageLoader } from "@/components/page-loader";
 
-export const WorkspaceIdSettingsClient = async () => {
-
+export const WorkspaceIdSettingsClient = () => {  // Removed 'async' from here
     const workspaceId = useWorkspaceId();
     const { data: initialValues, isLoading } = useGetWorkspace({ workspaceId });
 
@@ -21,7 +20,7 @@ export const WorkspaceIdSettingsClient = async () => {
     }
 
     return (
-        <div className=" w-full lg:max-w-xl">
+        <div className="w-full lg:max-w-xl">
             <EditWorkspaceForm initialValues={initialValues} />
         </div>
     )
